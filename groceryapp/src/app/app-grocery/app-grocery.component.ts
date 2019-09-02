@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-grocery.component.css']
 })
 export class AppGroceryComponent implements OnInit {
+  task: string;
+  tasks = [];
 
+  onClick() {
+    this.tasks.push({ name: this.task });
+    this.task = '';
+  }
   constructor() { }
 
   ngOnInit() {

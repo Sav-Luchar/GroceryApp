@@ -4,12 +4,23 @@
   <div style="text-align:center" class="row">
     <div class="col-xs-6 col-md-4">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter grocery items here" id="txtSearch" />
+        <input type="text" class="form-control" placeholder="Enter grocery items here" id="txtSearch"/>
         <div class="input-group-btn">
-          <button class="btn btn-primary" type="button">
-            <span class="glyphicon glyphicon-ok"></span>
+          <button class="btn btn-primary" type="button" (click)="onClick()">
+            <span class="f789"></span>
+<i class="fab fa-centos"></i>
+              
           </button>
+          <span>
+            {{tasks | json}}
+          </span>
         </div>
+        <br/>
+        <ul class="list-group">
+          <li *ngFor="let task of tasks" class="list-group-item">
+            <span> {{ task.name }} </span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
