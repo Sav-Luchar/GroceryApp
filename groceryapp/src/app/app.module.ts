@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AppGroceryComponent } from './app-grocery/app-grocery.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome'; 
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -17,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule, 
-    FormsModule
+    FormsModule, BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppGroceryComponent,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { MatToolbarModule } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Grocery App';
-
+  imports : [
+    MatToolbarModule
+  ]
 }
