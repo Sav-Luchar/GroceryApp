@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppGroceryComponent implements OnInit {
   task: string;
   tasks = [];
-
-  onClick() {
-    this.tasks.push({ name: this.task });
+ 
+  onClick(){
+    this.tasks.push({name: this.task});
     this.task = '';
   }
   constructor() { }

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppGroceryComponent } from './app-grocery/app-grocery.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome'; 
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule,
+    AngularFontAwesomeModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppGroceryComponent,
